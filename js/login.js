@@ -8,9 +8,9 @@ document.getElementById("login-btn").addEventListener("click", function () {
     const userPassword = passwordField.value;
 
     if (userEmail === "rifatrobi24@hotmail.com" && userPassword === "123456") {
-        console.log("Login successful");
+        window.location.href = "bank.html";
     }
     else {
-        console.log("Login failed");
+        alert("Login failed");
     }
 })
