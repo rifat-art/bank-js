@@ -1,4 +1,5 @@
 
+
 document.getElementById("login-btn").addEventListener("click", function(){
     const emailField = document.getElementById("user-email");
     const userEmail = emailField.value;
@@ -6,7 +7,10 @@ document.getElementById("login-btn").addEventListener("click", function(){
     const passwordField = document.getElementById("user-password");
     const userPassword = passwordField.value;
 
-
-
-    // console.log( userEmail, userPassword);
+    if(userEmail === "rifatrobi24@hotmail.com" && userPassword === "123456"){
+        console.log("Login successful");
+    }
+    else{
+        console.log("Login failed");
+    }
 })
