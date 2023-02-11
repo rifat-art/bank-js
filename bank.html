@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bank</title>
+    <title> User Dashbord </title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -18,7 +18,7 @@
                 Deposit
                 </h3>
                 <h2 class="font-bold text-4xl text-white ">
-                $00
+                $<span id="deposit-ase">00</span>
                 </h2>
             </div>
             <div class="bg-pink-500 p-7 rounded-lg">
@@ -34,10 +34,34 @@
                 Balance
                 </h3>
                 <h2 class="font-bold text-4xl text-white ">
-                $00
+                $1240
                 </h2>
             </div>
         </section>
+
+
+        <section class="w-9/12 mx-auto grid grid-cols-2 gap-2 mt-4">
+            <div class="bg-cyan-500 p-7 rounded-lg">
+                <h3 class="font-semibold text-lg text-white">
+                Please Deposit
+                </h3>
+                <input id="deposit-input" class="w-9/12 py-3 px-24 mb-2 block" type="text" placeholder="$ amount you want to deposit">
+                <button id="btn-deposit"  class="font-medium text-xl bg-red-400 hover:bg-red-900 text-white py-2 px-6 mt-3 ml-8 rounded-md">
+                    Deposit </button>
+            </div>
+            <div class="bg-cyan-700 p-7 rounded-lg">
+                <h3 class="font-semibold text-lg text-white">
+                Please Withdraw
+                </h3>
+                <input class="w-9/12 py-3 px-24 mb-2 block" type="text" placeholder="$ amount you want to Withdraw">
+                <button  class="font-medium text-xl bg-green-400 hover:bg-red-900 text-white py-2 px-6 mt-3 ml-8 rounded-md">
+                    Withdraw </button>
+            </div>
+        </section>
     </main>
+
+
+
+    <script src="./js/deposit.js"></script>
 </body>
 </html>
